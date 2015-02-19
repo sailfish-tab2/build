@@ -490,7 +490,7 @@ ifneq ($(dont_bother),true)
 # Include all of the makefiles in the system
 #
 
-subdir_makefile_dirs := bionic bootable build device external hardware hybris libcore system
+subdir_makefile_dirs := abi bionic bootable build device external hardware hybris libcore system
 
 # Can't use first-makefiles-under here because
 # --mindepth=2 makes the prunes not work.
@@ -510,6 +510,14 @@ subdir_makefiles := \
 ./frameworks/native/services/batteryservice/Android.mk \
 ./frameworks/native/cmds/servicemanager/Android.mk \
 ./frameworks/opt/emoji/Android.mk \
+./frameworks/av/camera/Android.mk \
+./frameworks/av/media/libmedia/Android.mk \
+./frameworks/av/media/libstagefright/Android.mk \
+./frameworks/native/services/connectivitymanager/Android.mk \
+./frameworks/av/drm/libdrmframework/Android.mk \
+./frameworks/av/drm/common/Android.mk \
+./frameworks/av/services/camera/libcameraservice/Android.mk \
+./frameworks/av/media/libmediaplayerservice/Android.mk \
 ./prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6/Android.mk \
 ./prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6/Android.mk \
 ./prebuilts/ndk/Android.mk \
